@@ -1,0 +1,18 @@
+[user]
+	name = CYandYUE
+	email = 89253033@qq.com
+[credential]
+	helper = store
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[core] 
+packedGitLimit = 512m 
+packedGitWindowSize = 512m 
+[pack] 
+deltaCacheSize = 2047m 
+packSizeLimit = 2047m 
+windowMemory = 2047m
